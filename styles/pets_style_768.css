@@ -1,0 +1,28 @@
+@media (max-width: 1279px) {
+  .header__main {
+    position: sticky;
+    width: calc(100vw - 60px);
+    padding: 0;
+    margin: 30px;
+  } 
+  
+  .our-pets {
+    width: 768px;
+    padding-bottom: 76px;
+  }
+  
+  .pets__slider_title {
+    padding-bottom: 30px;
+  }
+  
+  .pets__slider_list {
+    width: 708px;
+    height: 1365px;
+    overflow: hidden;
+    grid-template-columns: repeat(2, 270px);
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,127 @@
+@media (max-width: 767px) {
+  .header__main {
+    position: relative;
+    justify-content: flex-start;
+    width: calc(96.875%);
+    margin: 0;
+    padding: 30px 0px;
+    padding-left: 3.125%;
+  }
+
+  .logo {
+    position: relative;
+    left: 0px;
+
+    transition: 600ms ease 0s;
+    z-index: 2;
+  }
+
+  .logo_active {
+    position: absolute;
+    left: calc(100% - 310px);
+  }
+
+  .burger-btn {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 22px;
+    padding: 0;
+    margin: auto;
+    margin-right: 53px;
+
+    background-color: transparent;
+    background-image: url(../assets/icons/pets_burger.png);
+    background-repeat: no-repeat;
+    border: none;
+
+    transition: 600ms ease 0s;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .burger-btn_active {
+    transform: rotate(90deg);
+    outline: none;
+  }
+
+  .header__navigation {
+    position: fixed;
+    width: 320px;
+    height: 100%;
+    top: 0;
+    right: -320px;
+    overflow: hidden;
+
+    background-color: #ffffff;
+    transition: right 600ms ease 0s;
+    z-index: 1;
+  }
+  
+  .header__navigation_active {
+    right: 0;
+  }
+
+  .header__navigation_list {
+    width: 243px;
+    height: 100%;  
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .header__navigation_item {
+    margin: 0;
+
+    align-self: center;
+  }
+
+  .header__navigation_item_current {
+    margin-right: 0;
+
+    text-align: center;
+  }
+
+  .header__navigation_item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  
+  .header__navigation_item_link {
+    padding-bottom: 7px;
+
+    font-size: 32px;
+    line-height: 160%;
+  }  
+
+  .our-pets {
+    width: 320px;
+    padding-bottom: 42px;
+  }
+  
+  .pets__slider_title {
+    width: 300px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+  
+    font-size: 25px;
+    line-height: 32px;
+  }
+  
+  .pets__slider_list {
+    width: 270px;
+    grid-template-columns: 270px;
+    gap: 30px 0px;
+    margin: 0 auto;
+    margin-bottom: 42px;
+    padding: 0;
+  }  
+  
+  .pets__slider_pagination_item {
+    margin: 0 auto;
+  }
+    
+  .pets__slider_pagination_button:not(:last-child) {
+    margin-right: 5.83px;
+  }
+}

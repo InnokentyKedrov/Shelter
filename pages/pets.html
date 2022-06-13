@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our pets</title>
+  <link rel="icon" href="../assets/images/favicon.png">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/common_styles.css">
+  <link rel="stylesheet" href="../styles/pets_style.css">
+  <link rel="stylesheet" href="../styles/pets_style_768.css">
+  <link rel="stylesheet" href="../styles/pets_style_320.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <script src="../scripts/burger.js" defer></script>
+  <script src="../scripts/pagination.js" defer></script>
+  <script src="../scripts/modal.js" defer></script>
+</head>
+<body>
+  <header class="header__container">
+    <div class="header__main">
+      <h1 class="visually-hidden">Shelter for pets "Cozy House"</h1>
+      <div class="blackout"></div>
+      <a href="index.html" class="logo">
+        <span class="logo__item logo__item_title">Cozy House</span>
+        <span class="logo__item logo__item_description">Shelter for pets in Boston</span>
+      </a>
+      <button class="burger-btn" type="button" id="burger"></button>
+      <nav class="header__navigation">
+        <ul class="header__navigation_list">
+          <li class="header__navigation_item">
+            <a href="index.html" class="header__navigation_item_link">
+              About the shelter
+            </a>
+          </li>
+          <li class="header__navigation_item">
+            <a class="header__navigation_item_link header__navigation_item_link_current">
+              Our pets
+            </a>
+          </li>
+          <li class="header__navigation_item">
+            <a href="index.html#help" class="header__navigation_item_link">
+              Help the shelter
+            </a>
+          </li>
+          <li class="header__navigation_item">
+            <a href="#footer" class="header__navigation_item_link">
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main__container">
+    <div class="our-pets">
+      <h2 class="visually-hidden">Our pets gallery</h2>
+      <h3 class="pets__slider_title">
+        Our friends who are&nbsp;looking for a house
+      </h3>
+      <ul class="pets__slider_list">
+      </ul>
+      <ul class="pets__slider_pagination_list">
+        <li class="pets__slider_pagination_item">
+          <button class="pets__slider_pagination_button pets__slider_pagination_button-first pets__slider_pagination_button-disabled" type="button">&lt;&lt;</button>
+          <button class="pets__slider_pagination_button pets__slider_pagination_button-left pets__slider_pagination_button-disabled" type="button">&lt;</button>
+          <button class="pets__slider_pagination_button pets__slider_pagination_button-current" type="button">1</button>
+          <button class="pets__slider_pagination_button pets__slider_pagination_button-right pets__slider_pagination_button-enabled" type="button">&gt;</button>
+          <button class="pets__slider_pagination_button pets__slider_pagination_button-last pets__slider_pagination_button-enabled" type="button">&gt;&gt;</button>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer__container" id="footer">
+    <div class="footer">
+      <ul class="footer__list">
+        <li class="footer__item footer__item_contacts">
+          <h3 class="footer__title">For questions and suggestions</h3>
+          <a href="mailto:email@shelter.com" class="footer__data footer__data_mail">email@shelter.com</a>
+          <a href="tel:+136745677554" class="footer__data footer__data_tel">+13 674 567 75 54</a>
+        </li>
+        <li class="footer__item footer__item_locations">
+          <h3 class="footer__title">We are waiting for your visit</h3>
+          <a href="https://goo.gl/maps/4PZnVswjZVGK9cVbA" class="footer__data footer__data_locations_boston" target="_blank">1 Central Street, Boston (entrance from the store)</a>
+          <a href="https://goo.gl/maps/s3nSUkvqE4z5acGn7" class="footer__data footer__data_locations_london" target="_blank">18 South Park, London </a>
+        </li>
+        <li class="footer__item footer__item_image"></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="modal">
+    <button class="modal__button" type="button">+</button>
+  </div>
+</body>
+</html>

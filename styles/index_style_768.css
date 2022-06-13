@@ -1,0 +1,145 @@
+@media (max-width: 1279px) {
+  .container {
+    width: 100%;
+    height: 1165px;
+  }
+
+  .header__main {
+    width: calc(100vw - 60px);
+    padding: 0;
+    margin: 30px;
+  }  
+
+  .start-screen {
+    flex-direction: column;
+    width: 708px;
+  }
+  
+  .start-screen__title {
+    padding-top: 30px;
+    padding-left: 124px;
+  }
+  
+  .start-screen__description {
+    margin: 0 auto;
+    margin-bottom: 42px;
+  }
+  
+  .start-screen_link {
+    margin: 0 auto;
+    margin-bottom: 100px;  
+  }
+  
+  .start-screen__image {
+    align-self: flex-end;
+
+    width: 569px;
+    height: 593px;
+  }
+  
+  .about {
+    width: 768px;
+    height: 868px;
+    
+    background-position: bottom center;
+  }
+  
+  .about__container {
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  .pets {
+    width: 768px;
+  }
+  
+  .pets__slider_left-arrow {
+    margin-left: 30px;
+  }
+  
+  .pets__slider_right-arrow {
+    margin-right: 30px;
+  }
+
+  .pets__slider_wrapper {
+    width: 580px;
+  }
+  
+  .pets__slider_list {
+    width: 580px;
+    left: -620px;
+    column-gap: 40px;
+  }
+
+  @keyframes move-right {
+    from {left: -620px;}
+    to {left: -1240px;}
+  }
+  
+  @keyframes move-left {
+    from {left: -620px;}
+    to {left: 0px;}
+  }
+
+  .transition-right,
+  .transition-left {
+    animation-duration: 2s;
+  }
+  
+  .pets__slider_item {
+    margin: 0;
+  }
+  
+  .help {
+    width: 100%;
+  }
+  
+  .help__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(170px, 1fr));
+    column-gap: 9.8%;
+    padding: 0 70px;
+  }
+
+  .help__item {
+    width: 170px;
+    margin: 0 auto;
+  }
+  
+  .in-addition {
+    width: 768px;
+    height: 783px;
+  }
+  
+  .in-addition__wrapper {
+    justify-content: flex-start;
+    width: 505px;
+    height: 603px;
+    padding: 80px 0 100px;
+    margin: 0 auto;
+  
+    background-position: center 421px;
+  }
+  
+  .in-addition__title {
+    width: 380px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  .in-addition__bank {
+    margin-left: 62.5px;
+    margin-bottom: 20px;
+  }
+  
+  .in-addition__bank_link {
+    margin-left: 62.5px;
+    margin-bottom: 20px;
+  }
+  
+  .in-addition__info {
+    width: 380px;
+    margin: 0 auto;
+  }
+}
+
